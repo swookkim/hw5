@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KIEI-451: The DOM</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="p-8">
+  <div class="space-y-8">
+    <div>
+      <button class="click-me bg-pink-500 text-white p-2">Change title</button>
+      <a href="https://google.com/" class="add-movie bg-pink-500 text-white px-2 py-3">Add a movie</a>
+      <button class="zoom-image bg-pink-500 text-white p-2">Zoom image</button>
+      <button class="change-image bg-pink-500 text-white p-2">Change image</button>
+    </div>
+
+    <div class="page-title font-bold text-purple-500 text-3xl">
+      Fun times!
+    </div>
+
+    <div>
+      <ul class="movies-to-watch list-disc list-inside text-xl">
+        <li>Die Hard</h1>
+        <li>Robocop</li>
+        <li>Bride of Chucky</li>
+      </ul>
+    </div>
+
+    <div>
+      <img src="../images/grogu.jpg" alt="Grogu" class="border-4 w-96 transition-all duration-500 ease-in-out">
+    </div>
+
+    <div class="md:flex md:space-x-4 my-8">
+      <form>
+        <label for="first-name">What is your name?</label>
+        <input type="text" id="first-name" name="firstName" class="my-2 p-2 w-64 border border-gray-400 rounded shadow-xl focus:outline-none focus:ring-purple-500 focus:border-purple-500">
+        <button class="say-hi bg-pink-500 text-white p-2">Say hi</button>
+      </form>
+
+      <div class="greet my-4"></div>
+    </div>
+  </div>
+
+  <script src="events.js"></script>
+</body>
+
+</html>
