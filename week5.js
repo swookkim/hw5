@@ -15,6 +15,7 @@
 
 window.addEventListener('DOMContentLoaded', async function() {
   // Get a reference to the "get weather" button
+  let getWeatherButton = document.querySelector(`.get-weather`)
 
   // When the "get weather" button is clicked:
 
