@@ -70,16 +70,17 @@ window.addEventListener('DOMContentLoaded', async function() {
       </div>
       </div>`
 
+      // - store a reference to the forecast element
+      let forecastElement = document.querySelector(`.forecast`)
+
+      // - Fill in the forecast element with the data
+      forecastElement.innerHTML = `
+      <div class="text-center space-y-8">
+      <div class="font-bold text-3xl"> ${days}Day Forecast</div>`
+
       // - Loop over for forecasting the weahter of next days
       for (i=0; i<days; i++) {
 
-        // - store a reference to the forecast element
-        let forecastElement = document.querySelector(`.forecast`)
-
-        // - Fill the forecast element with the data
-        forecastElement.innerHTML = `
-        <div class="text-center space-y-8">
-        <div class="font-bold text-3xl"> ${days}Day Forecast</div>`
         forecastElement.insertAdjacentHTML (`beforeend`,`
         <div>
           <img src="https:${dailyForecast.forecastday[i].day.condition.icon}" class="mx-auto">
