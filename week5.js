@@ -82,6 +82,7 @@ window.addEventListener('DOMContentLoaded', async function() {
       // - Loop over for forecasting the weahter of next days
       for (i=0; i<days; i++) {
 
+        // - Fill in the element withe the forecasting data
         forecastElement.insertAdjacentHTML (`beforeend`,`
         <div>
           <div class ="text-center space-y-8">
