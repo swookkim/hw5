@@ -63,7 +63,7 @@ window.addEventListener('DOMContentLoaded', async function() {
       <div class="text-center space-y-2">
       <div class="font-bold text-3xl">Current Weather for ${interpretedLocation.name}, ${interpretedLocation.region}</div>
       <div class="font-bold">
-        <img src= ${currentWeather.condition.icon} class="inline-block">
+        <img src= https:${currentWeather.condition.icon} class="inline-block">
         <span class="temperature">60</span>° 
         and
         <span class="conditions">Partly Cloudy</span>
