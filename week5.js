@@ -52,15 +52,20 @@ window.addEventListener('DOMContentLoaded', async function() {
       let element = document.querySelector(`.current`)
 
       // - Fill the current element with the location and current weather condition
-      
+      element.innerHTML = `
+      <div class="text-center space-y-2">
+      <div class="font-bold text-3xl">Current Weather for ${interpretedLocation.name}, ${interpretedLocation.region}</div>
+      <div class="font-bold">
+        <img src="https://cdn.weatherapi.com/weather/64x64/day/116.png" class="inline-block">
+        <span class="temperature">60</span>° 
+        and
+        <span class="conditions">Partly Cloudy</span>
+      </div>
+    </div>`
 
-
-    
-    
     }
 
-  }
-  )
+  })
 
     
 })
