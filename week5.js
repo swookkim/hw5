@@ -68,7 +68,7 @@ window.addEventListener('DOMContentLoaded', async function() {
         and
         <span class="conditions">${currentWeather.condition.text}</span>
       </div>
-    </div>`
+      </div>`
 
       // - Loop over for forecasting the weahter of next days
       for (i=0; i<days; i++) {
@@ -77,7 +77,7 @@ window.addEventListener('DOMContentLoaded', async function() {
         let forecastElement = document.querySelector(`.forecast`)
 
         // - Fill the forecast element with the data
-        forecastElement.insertAdjacentHTML (`beforeend`, `
+        forecastElement.innerHTML = `
         <div class="text-center space-y-8">
         <div class="font-bold text-3xl"> ${days}Day Forecast</div>
         <div>
