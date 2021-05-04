@@ -28,6 +28,12 @@ window.addEventListener('DOMContentLoaded', async function() {
     // - Get the user-entered location from the element's value
     let location = locationInput.value
 
+    // - Get a reference tp the element containg the user-entered days
+    let daysInput = document.querySelector(`#days`)
+
+    // - Get the user-entered location from the element's value
+    let days = daysInput.value
+
     // - Check to see if the user entered anything; if so:
     if (location.length > 0) {
 
