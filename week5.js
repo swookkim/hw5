@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', async function() {
     let days = daysInput.value
 
     // - Check to see if the user entered anything; if so:
-    if (location.length > 0) {
+    if (location.length > 0 & days >0) {
 
       // - Construct a URL to call the WeatherAPI.com API
       let url = `https://api.weatherapi.com/v1/forecast.json?key=2d0b630257e44b2795b154134212704&q=${location}&days=${days}`
