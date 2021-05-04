@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', async function() {
     event.preventDefault()
 
     // - Get a reference to the element containing the user-entered location
-    let locationInput = document.querySelector(#location)
+    let locationInput = document.querySelector(`#location`)
 
     // - Get the user-entered location from the element's value
     let location = locationInput.value
