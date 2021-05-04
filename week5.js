@@ -70,6 +70,27 @@ window.addEventListener('DOMContentLoaded', async function() {
       </div>
     </div>`
 
+      // - Loop over for forecasting the weahter of next days
+      for (i=0; i<days; i++) {
+
+        // - store a reference to the forecast element
+        let forecastElement = document.querySelector(`.forecast`)
+
+        // - Fill the forecast element with the data
+        forecastElement.innerHTML =`
+        <div class="text-center space-y-8">
+        <div class="font-bold text-3xl"> ${days}Day Forecast</div>
+        <div>
+          <img src="https:${dailyForecast.forecastday.[i].day.condition.icon}" class="mx-auto">
+          <h1 class="text-2xl text-bold text-gray-500">${dailyForecast.forecastday.[i].date}</h1>
+          <h2 class="text-xl">High ${dailyForecast.forecastday.[i].day.maxtemp_f}° – ${dailyForecast.forecastday.[i].day.mintemp_f}°</h2>
+          <p class="text-gray-500">${dailyForecast.forecastday.[i].day.condition.text}</h1>
+        </div>
+        `
+      }
+
+
+
     }
 
   })
