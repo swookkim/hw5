@@ -76,7 +76,8 @@ window.addEventListener('DOMContentLoaded', async function() {
       // - Fill in the forecast element with the data
       forecastElement.innerHTML = `
       <div class="text-center space-y-8">
-      <div class="font-bold text-3xl"> ${days} Days Forecast</div>`
+      <div class="font-bold text-3xl"> ${days} Days Forecast</div>
+      </div>`
 
       // - Loop over for forecasting the weahter of next days
       for (i=0; i<days; i++) {
