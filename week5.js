@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', async function() {
     if (location.length > 0) {
 
       // - Construct a URL to call the WeatherAPI.com API
-      let url = `https://api.weatherapi.com/v1/forecast.json?key=2d0b630257e44b2795b154134212704&q=${location}&${days}=3`
+      let url = `https://api.weatherapi.com/v1/forecast.json?key=2d0b630257e44b2795b154134212704&q=${location}&days=${days}`
     
       // - Fetch the url, wait for a response, store the response in memory
       let response = await fetch(url)
