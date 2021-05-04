@@ -83,6 +83,7 @@ window.addEventListener('DOMContentLoaded', async function() {
 
         forecastElement.insertAdjacentHTML (`beforeend`,`
         <div>
+          <div class ="text-center space-y-8">
           <img src="https:${dailyForecast.forecastday[i].day.condition.icon}" class="mx-auto">
           <h1 class="text-2xl text-bold text-gray-500">${dailyForecast.forecastday[i].date}</h1>
           <h2 class="text-xl">High ${dailyForecast.forecastday[i].day.maxtemp_f}° – ${dailyForecast.forecastday[i].day.mintemp_f}°</h2>
