@@ -82,9 +82,9 @@ window.addEventListener('DOMContentLoaded', async function() {
         <div class="font-bold text-3xl"> ${days}Day Forecast</div>
         <div>
           <img src="https:${dailyForecast.forecastday[i].day.condition.icon}" class="mx-auto">
-          <h1 class="text-2xl text-bold text-gray-500">${dailyForecast.forecastday.i.date}</h1>
-          <h2 class="text-xl">High ${dailyForecast.forecastday.i.day.maxtemp_f}° – ${dailyForecast.forecastday.i.day.mintemp_f}°</h2>
-          <p class="text-gray-500">${dailyForecast.forecastday.i.day.condition.text}</h1>
+          <h1 class="text-2xl text-bold text-gray-500">${dailyForecast.forecastday[i].date}</h1>
+          <h2 class="text-xl">High ${dailyForecast.forecastday[i].day.maxtemp_f}° – ${dailyForecast.forecastday[i].day.mintemp_f}°</h2>
+          <p class="text-gray-500">${dailyForecast.forecastday[i].day.condition.text}</h1>
         </div>
         `
       }
