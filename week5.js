@@ -77,7 +77,7 @@ window.addEventListener('DOMContentLoaded', async function() {
         let forecastElement = document.querySelector(`.forecast`)
 
         // - Fill the forecast element with the data
-        forecastElement.innerHTML =`
+        forecastElement.insertAdjacentHTML (`beforeend`, `
         <div class="text-center space-y-8">
         <div class="font-bold text-3xl"> ${days}Day Forecast</div>
         <div>
@@ -86,14 +86,8 @@ window.addEventListener('DOMContentLoaded', async function() {
           <h2 class="text-xl">High ${dailyForecast.forecastday[i].day.maxtemp_f}° – ${dailyForecast.forecastday[i].day.mintemp_f}°</h2>
           <p class="text-gray-500">${dailyForecast.forecastday[i].day.condition.text}</h1>
         </div>
-        `
+        `)
       }
-
-
-
     }
-
-  })
-
-    
+  }) 
 })
